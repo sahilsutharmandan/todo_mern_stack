@@ -1,0 +1,486 @@
+body * {
+  fontfamily: __Poppins_dd2ae8, __Poppins_Fallback_dd2ae8, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d3d3d3;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  box-shadow: 0 5px 15px rgba(49, 236, 255, 0.35);
+  border-radius: 48px;
+  border: 2px solid #fff;
+  background: #e3f2f8;
+  box-shadow: 0 12px 24px 0 rgba(0, 175, 244, 0.2);
+
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+.swiper .swiper-button-prev:after,
+.swiper .swiper-button-next:after {
+  font-size: 20px;
+  color: #000;
+  font-weight: 800;
+}
+/* Common CSS Start */
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.owl-carousel.owl-theme .owl-nav {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.owl-carousel.owl-theme .owl-nav button.owl-prev,
+.owl-carousel.owl-theme .owl-nav button.owl-next {
+  background-color: #e3f2f8;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  box-shadow: 0 11px 10px 1px #008ec733;
+  border-radius: 50%;
+  font-size: 20px;
+  position: absolute;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+.owl-collection.owl-carousel.owl-theme .owl-nav button.owl-prev,
+.owl-collection.owl-carousel.owl-theme .owl-nav button.owl-next {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: unset;
+  background-repeat: no-repeat;
+}
+
+.owl-carousel.owl-theme .owl-nav button.owl-prev,
+.owl-carousel.owl-theme .owl-nav button.owl-next {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10px;
+  font-size: 0px;
+}
+
+.owl-carousel.owl-theme .owl-nav button.owl-prev {
+  background-image: url("/images/arrow-right.png");
+}
+
+.owl-carousel.owl-theme .owl-nav button.owl-next {
+  background-image: url("/images/arrow-left.png");
+}
+
+.owl-carousel.owl-theme .owl-nav button.owl-prev {
+  left: -90px;
+}
+
+.owl-carousel.owl-theme .owl-nav button.owl-next {
+  right: -90px;
+}
+
+.owl-collection.owl-carousel.owl-theme .owl-nav {
+  top: unset;
+  transform: unset;
+  bottom: 80px;
+}
+
+.owl-collection.owl-carousel.owl-theme .owl-nav button.owl-prev {
+  left: unset;
+  right: -110px;
+}
+
+.owl-collection.owl-carousel.owl-theme .owl-nav button.owl-next {
+  right: -170px;
+}
+
+.experience-carousel .owl-carousel.owl-theme .owl-nav button.owl-prev,
+.experience-carousel .owl-carousel.owl-theme .owl-nav button.owl-next {
+  height: 36px;
+  width: 36px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgb(0 0 0/20%);
+}
+
+.experience-carousel .owl-carousel.owl-theme .owl-nav {
+  top: -4px;
+  transform: unset;
+}
+
+.bubble-loader .login-bubble-dots {
+  background: #e35b26;
+  animation: 1s ease-in-out infinite both inlineSwell;
+  border-radius: 100%;
+  display: inline-block;
+  height: 12px;
+  margin: 0 4px;
+  width: 12px;
+}
+
+.bubble-loader .login-bubble-dots:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.bubble-loader .login-bubble-dots:nth-child(3) {
+  animation-delay: 0.32s;
+}
+
+.image-group .form-control {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.wrap-info .image-group {
+  width: 124px;
+  margin-inline: auto;
+}
+
+.icon-group {
+  position: relative;
+}
+
+.icon-group img {
+  position: absolute;
+  right: 10px;
+  top: 42px;
+  max-width: 16px;
+}
+
+.loader-relative div#preloader {
+  position: relative;
+  min-height: 300px;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  z-index: 1;
+}
+
+@keyframes inlineSwell {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  25%,
+  75% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.react-datepicker .react-datepicker__day {
+  padding: 11px 10px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 17px;
+  width: auto;
+  height: auto;
+  min-width: 39px;
+}
+
+.react-datepicker .react-datepicker__day-name {
+  font-size: 18px;
+  color: #484848;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 10px;
+  min-width: 39px;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  background-color: #e35b26 !important;
+}
+
+.react-datepicker .react-datepicker__current-month {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 500;
+  color: #15192c;
+}
+
+.react-datepicker .react-datepicker__navigation-icon {
+  top: 14px;
+}
+
+.other-payment .google-pay-button-container button {
+  width: 100%;
+  margin-top: 18px;
+}
+.share-experience-modal .modal-content {
+  width: 360px;
+  margin: auto;
+}
+.share-experience-modal {
+  background: rgba(0, 0, 0, 0.75);
+}
+.share-experience-modal .modal-content .modal-header {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+}
+.share-experience-modal .modal-content .social-icon a {
+  border: 1px solid #e1dede;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share-experience-modal .modal-content .social-icon img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.share-experience-modal .copy-button {
+  all: unset;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e1dede;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* Common CSS End */
+@media screen and (max-width: 1199.98px) {
+  .owl-carousel.owl-theme .owl-nav button.owl-prev {
+    left: -20px;
+  }
+
+  .owl-carousel.owl-theme .owl-nav button.owl-next {
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .owl-collection.owl-carousel.owl-theme .owl-nav {
+    top: unset;
+    transform: unset;
+    bottom: 20px;
+  }
+
+  .owl-carousel.owl-theme .owl-nav button.owl-prev,
+  .owl-carousel.owl-theme .owl-nav button.owl-next {
+    width: 36px;
+    height: 36px;
+  }
+
+  .experience-carousel .owl-carousel.owl-theme .owl-nav button.owl-prev,
+  .experience-carousel .owl-carousel.owl-theme .owl-nav button.owl-next {
+    width: 26px;
+    height: 26px;
+    top: 7px;
+  }
+
+  .experience-carousel .owl-carousel.owl-theme .owl-nav button.owl-next {
+    right: 25px;
+  }
+
+  .experience-carousel .owl-carousel.owl-theme .owl-nav button.owl-prev {
+    left: -25px;
+  }
+  .not-found-wrapper .page-title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .not-found-wrapper .error-section p {
+    width: 95%;
+  }
+}
+
+.tooltips {
+  position: relative;
+  width: fit-content;
+}
+
+.tooltips .tooltiptext {
+  visibility: hidden;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #373737;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.tooltips .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #373737 transparent transparent transparent;
+}
+
+.tooltips:hover .tooltiptext {
+  visibility: visible;
+}
+
+.button-loaderss {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  outline: 1px solid #f2f2f2;
+}
+.button-loaderss .spin-colored-loader {
+  height: 100%;
+}
+.not-found-wrapper {
+  margin-top: 90px;
+}
+.not-found-wrapper .page-title {
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: -1px;
+  font-weight: 600;
+  color: #484848;
+  margin-bottom: 8px;
+}
+.not-found-wrapper .error-section p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 10px;
+  color: #484848;
+}
+.not-found-wrapper .error-section {
+  background-image: url(https://drfsb8fjssbd3.cloudfront.net/images/error-section-img.jpg);
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.no-booking {
+  margin: 32px 0;
+}
+/* .banner-search-form .p-autocomplete {
+    width: 100%;
+  }
+  .banner-search-form .p-autocomplete input {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    padding-inline-start: 18px;
+  }
+  .banner-search-form .p-autocomplete input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+  .banner-search-form .p-autocomplete .p-autocomplete-loader {
+    top: 35%;
+  }
+  */
+.p-autocomplete-panel {
+  max-width: 300px;
+  min-width: 300px;
+}
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item {
+  padding: 8px;
+  font-weight: 600;
+  color: #666;
+  line-height: 20px;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.loading-icon {
+  animation: rotateLoading 2s linear infinite;
+}
+@keyframes rotateLoading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

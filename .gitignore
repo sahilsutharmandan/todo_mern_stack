@@ -1,0 +1,13 @@
+# Backend
+
+/Backend/node_modules
+/Backend/package-lock.json
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+#
+
+/Frontend/node_modules
+/Frontend/.next
+/Frontend/package-lock.json
